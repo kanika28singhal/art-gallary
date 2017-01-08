@@ -137,34 +137,25 @@ elem[1]=document.getElementById("myAnimation4");
 elem[2]=document.getElementById("myAnimation5");
 for (i = 0; i < elem.length; i++)
 {  
-abc = elem[i]
- 
 var posy = 600;
+
+ 
+
   
-  var y =setInterval(increase,60);
+  var y = setInterval(increase,60);
+   
+  abc = elem[i]
   function increase()
   {
   if (posy==0)
-  {clearInterval(x);
+  {clearInterval(y);
+  
   }
+  else{
+  posy=posy-6;
+  abc.style.left=posy+'px';}
   }
-  var x = setInterval(frame1,50);
-
-  function frame1() {
-
-    if (posy == 0) {
-	
-      clearInterval(x);
-	  
-	  
-    } else {
-      
-	  posy=posy-6;
-     
-      abc.style.left = posy + 'px';
-	    
-    }
-	}
+  
      
  
 }	
