@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+	<head>
+		<title> ART GALLARY</title>
+		<link href="gallary.css" rel="stylesheet" type="text/css"/>
+		 <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+		body
+		{
+		background-color:black;}
+	#myAnimation1 {
+ top:0px;
+ left:15%;
+  position: relative;
+  }
+  #myAnimation2 {
+ top:0px;
+ left:15%;
+  position: relative;
+  }
+
+#myAnimation3 {
+  top:0px;
+ left:600px;
+  position: relative;
+
+ 
+}
+#myAnimation4 {
+  top:0px;
+ left:600px;
+  position: relative;
+
+ 
+}
+		</style>
+	</head>
+	<body onload="myMove(); myMove3();">
+	
+		<div class="gallary">
+		<div class="row" style="margin:0px">
+			<div class="col-sm-6" style="padding:0px">
+				
+				<div class="pic" id ="myAnimation1">
+				<img src="images/imgkiss.png" >
+				</div>
+				<div class="pic" id ="myAnimation2">
+				<img src="images/imgheartbreak.png"  >
+				</div>
+				<div class="pic" >
+				
+				</div>
+				<div class="pic">
+				<img src="images/imgneverlosehope.png" >
+				</div>
+				<div class="pic">
+				<img src="images/imghug.png" >
+				</div>
+				<div class="pic">
+				<img src="images/imgeye.png" >
+				</div>
+				<div class="pic">
+				<img src="images/imgnight.png" >
+				</div>
+				
+				
+				
+				
+				
+				
+			</div>
+			
+			
+			<div class="col-sm-6" style="padding:0px">
+				<div id ="myAnimation3">
+						<img src="images/imgcar.png" >
+				</div>
+				<div id ="myAnimation4">
+						<img src="images/imgcar.png" >
+				</div>
+		
+
+				
+			<div class="pic">
+				<img src="images/imgwine.png" >
+			</div>
+			<div class="pic">
+				<img src="images/imglips.png" >
+			</div>
+			<div class="pic">
+				<img src="images/imgbird.png" >
+			</div>
+			<div class="pic">
+				<img src="images/imgfrnds.png" >
+			</div>
+			<div class="pic">
+				<img src="images/imgdepression.png" >
+			</div>
+			
+			
+				
+			</div>
+		</div>
+		</div>
+<p id="demo"></p>
+<script>		
+	function myMove() {
+  var elem1 = document.getElementById("myAnimation1");
+ var elem2=document.getElementById("myAnimation2");
+   var posy = -600;
+  var id = setInterval(frame,50);
+  function frame() {
+    if (posy == 0 ) {
+      clearInterval(id);
+    } else {
+     
+	  posy=posy+6;
+    
+      elem1.style.left = posy + 'px';
+	   elem2.style.left = posy + 'px';
+    }
+  }
+}
+
+
+function myMove3() {
+
+
+var elem = [];
+var i;
+
+elem[0]=document.getElementById("myAnimation3");
+elem[1]=document.getElementById("myAnimation4");
+
+for (i = 0; i < 2; i++)
+{ 
+abc = elem[i];
+var posy = 600;
+  var x = setInterval(frame, 50);
+  function frame() {
+    if (posy == 0) {
+      clearInterval(x);
+    } else {
+      
+	  posy=posy-6;
+     
+      abc.style.left = posy + 'px';
+    }
+	}
+     
+ 
+}	
+ 
+  }
+
+</script>
+	</body>
+</html>

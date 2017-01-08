@@ -1,0 +1,41 @@
+
+
+.gallary	
+{
+	margin:auto;
+	width:62%;
+
+}
+
+.row
+{margin:0px;!important
+}
+.col-sm-6
+{
+	padding:0px;!important
+
+}
+
+
+ 
+.pic {
+
+width: 100%;
+ overflow: hidden;
+
+       
+}
+		
+.pic img {
+  
+  width: 100%;
+  transition: all 1s ease;
+   
+}
+ 
+.pic img:hover {
+  width: 110%;
+ 
+   brightness(100%) 
+  
+}
