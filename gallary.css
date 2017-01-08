@@ -15,7 +15,10 @@
 	padding:0px;!important
 
 }
-
+.col-sm-12
+{
+	padding:0px;!important
+}
 
  
 .pic {
@@ -23,19 +26,41 @@
 width: 100%;
  overflow: hidden;
 
+
        
 }
-		
+.pic_bottom
+{
+background-color:grey;	
+z-index:10;
+	position:absolute;
+	left:90%;
+	padding:2%;
+
+	
+	font-size:20px;
+
+	color:black;
+	
+	
+}
+
 .pic img {
   
   width: 100%;
   transition: all 1s ease;
+   z-index:-1;
    
 }
  
 .pic img:hover {
   width: 110%;
- 
-   brightness(100%) 
+ opacity:.6;
   
+  
+}
+.pic img:hover.pic i
+{
+	display:block;
+	opacity:1;
 }

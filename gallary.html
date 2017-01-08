@@ -11,32 +11,7 @@
 		body
 		{
 		background-color:black;}
-#myAnimation1 {
- top:0px;
- left:15%;
-  position: relative;
-  }
- #myAnimation2 {
- top:0px;
- left:15%;
-  position: relative;
-  }
 
-#myAnimation3 {
-  top:0px;
- left:600px;
-  position: relative;
-  }
-#myAnimation4 {
-  top:0px;
- left:600px;
-  position: relative;
-}
-#myAnimation5 {
-  top:0px;
- left:600px;
-  position: relative;
-}
 		</style>
 	</head>
 	<body onload="myMove(); myMove3();">
@@ -45,10 +20,10 @@
 		<div class="row" style="margin:0px">
 			<div class="col-sm-6" style="padding:0px">
 				
-				<div class="pic" id ="myAnimation1">
+				<div class="pic">
 				<img src="images/imgkiss.png" >
 				</div>
-				<div class="pic" id ="myAnimation2">
+				<div class="pic">
 				<img src="images/imgheartbreak.png"  >
 				</div>
 				
@@ -74,16 +49,9 @@
 			
 			
 			<div class="col-sm-6" style="padding:0px">
-				<div id ="myAnimation3">
-						<img src="images/imgcar.png" >
-				</div>
-				<div id ="myAnimation4">
-						<img src="images/imgcar.png" >
-				</div>
-				<div id ="myAnimation5">
-						<img src="images/imgcar.png" >
-				</div>
-				
+			<div class="pic">	
+				<img src="images/imgcar.png" >
+			</div>	
 			<div class="pic">
 				<img src="images/imgwine.png" >
 			</div>
@@ -106,62 +74,6 @@
 		</div>
 		</div>
 
-<script>		
-	function myMove() {
-  var elem1 = document.getElementById("myAnimation1");
- var elem2=document.getElementById("myAnimation2");
-   var posy = -600;
-  var id = setInterval(frame,50);
-  function frame() {
-    if (posy == 0 ) {
-      clearInterval(id);
-    } else {
-     
-	  posy=posy+6;
-    
-      elem1.style.left = posy + 'px';
-	   elem2.style.left = posy + 'px';
-    }
-  }
-}
 
-
-function myMove3() {
-
-
-var elem = [];
-var i;
-
-elem[0]=document.getElementById("myAnimation3");
-elem[1]=document.getElementById("myAnimation4");
-elem[2]=document.getElementById("myAnimation5");
-for (i = 0; i < elem.length; i++)
-{  
-var posy = 600;
-
- 
-
-  
-  var y = setInterval(increase,60);
-   
-  abc = elem[i]
-  function increase()
-  {
-  if (posy==0)
-  {clearInterval(y);
-  
-  }
-  else{
-  posy=posy-6;
-  abc.style.left=posy+'px';}
-  }
-  
-     
- 
-}	
- 
-  }
-
-</script>
 	</body>
 </html>
