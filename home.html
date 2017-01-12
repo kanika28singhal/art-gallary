@@ -46,16 +46,25 @@
 			</div>
 		
 		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="heading">
+					Art gallery
+				</div>
+			</div>
+		</div>
 	<div class="gallary" id ="gallary">
 		<div class="row" style="margin:0px">
 			<div class="col-sm-6" style="padding:0px">
+				
+
 					
 					<div class="pic">
 							<div class="pic_bottom">
 								<i class="fa fa-commenting-o"></i>
 								<i class="fa fa-thumbs-o-up"></i>
 							</div>
-								<img src="images/imgkiss.png" >
+								<img id="myImg1" src="images/imgkiss.png" >
 					</div>
 			
 						
@@ -64,7 +73,7 @@
 							<i class="fa fa-commenting-o"></i>
 							<i class="fa fa-thumbs-o-up"></i>
 						</div>
-						<img src="images/imgheartbreak.png"  >
+						<img id="myImg2" src="images/imgheartbreak.png"  >
 					</div>
 					
 					<div class="pic">
@@ -72,7 +81,7 @@
 							<i class="fa fa-commenting-o"></i>
 							<i class="fa fa-thumbs-o-up"></i>
 						</div>
-						<img src="images/imgneverlosehope.png" >
+						<img id="myImg3" src="images/imgneverlosehope.png" >
 					</div>
 					
 					<div class="pic">
@@ -80,23 +89,35 @@
 							<i class="fa fa-commenting-o"></i>
 							<i class="fa fa-thumbs-o-up"></i>
 						</div>
-						<img src="images/imghug.png" >
+						<img id="myImg4" src="images/imghug.png" >
 					</div>
 					<div class="pic">
 						<div class="pic_bottom">
 							<i class="fa fa-commenting-o"></i>
 							<i class="fa fa-thumbs-o-up"></i>
 						</div>			
-						<img src="images/imgeye.png" >
+						<img id="myImg5" src="images/imgeye.png" >
 					</div>
 					<div class="pic">
 						<div class="pic_bottom">
 							<i class="fa fa-commenting-o"></i>
 							<i class="fa fa-thumbs-o-up"></i>
 						</div>			
+					<img  id="myImg6" src="images/imgnight.png" >
+					</div>
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+
+					  <!-- The Close Button -->
+					  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+					  <!-- Modal Content (The Image) -->
+					  <img class="modal-content" id="img01">
+
+					 
 					
-					<img src="images/imgnight.png" >
-					</div>
+					  </div>
+					
 			</div>
 			
 			
@@ -106,49 +127,129 @@
 								<i class="fa fa-commenting-o"></i>
 								<i class="fa fa-thumbs-o-up"></i>
 							</div>	
-						<img src="images/imgcar.png" >
+						<img id="myImg7"src="images/imgcar.png" >
 					</div>	
 					<div class="pic">
 						<div class="pic_bottom">
 								<i class="fa fa-commenting-o"></i>
 								<i class="fa fa-thumbs-o-up"></i>
 							</div>	
-						<img src="images/imgwine.png" >
+						<img id="myImg8"src="images/imgwine.png" >
 					</div>
 					<div class="pic">
 							<div class="pic_bottom">
 								<i class="fa fa-commenting-o"></i>
 								<i class="fa fa-thumbs-o-up"></i>
 							</div>	
-						<img src="images/imglips.png" >
+						<img id="myImg9"src="images/imglips.png" >
 					</div>
 					<div class="pic">
 						<div class="pic_bottom">
 								<i class="fa fa-commenting-o"></i>
 								<i class="fa fa-thumbs-o-up"></i>
 						</div>	
-						<img src="images/imgbird.png" >
+						<img id="myImg10" src="images/imgbird.png" >
 					</div>
 					<div class="pic">
 							<div class="pic_bottom">
 								<i class="fa fa-commenting-o"></i>
 								<i class="fa fa-thumbs-o-up"></i>
 							</div>	
-						<img src="images/imgfrnds.png" >
+						<img id="myImg11" src="images/imgfrnds.png" >
 					</div>
 					<div class="pic">
 							<div class="pic_bottom">
 								<i class="fa fa-commenting-o"></i>
 								<i class="fa fa-thumbs-o-up"></i>
 							</div>	
-						<img src="images/imgdepression.png" >
+						<img id="myImg12" src="images/imgdepression.png" >
 					</div>
 				</div>
 		</div>
 		</div>
+		<!-- The Modal -->
+					<div id="myModal" class="modal">
+							<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+							<img class="modal-content" id="img01">
+					</div>
 	</div>
 	
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
 
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img1 = document.getElementById('myImg1');
+var img2 = document.getElementById('myImg2');
+var img3 = document.getElementById('myImg3');
+var img4 = document.getElementById('myImg4');
+var img5 = document.getElementById('myImg5');
+var img6 = document.getElementById('myImg6');
+var img7 = document.getElementById('myImg7');
+var img8 = document.getElementById('myImg8');
+var img9 = document.getElementById('myImg9');
+var img10 = document.getElementById('myImg10');
+var img11 = document.getElementById('myImg11');
+var img12 = document.getElementById('myImg12');
+var modalImg = document.getElementById("img01");
+
+img1.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+	}
+img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+	}
+img3.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+	}
+img4.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+	}
+img5.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+	}
+img6.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+	}
+img7.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+	}
+img8.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+	}
+img9.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+	}
+img10.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+	}
+img11.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+	}
+img12.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+	}
+	
+
+var span = document.getElementsByClassName("close")[0];
+
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
 
 	</body>
 </html>
