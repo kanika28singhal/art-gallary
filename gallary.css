@@ -33,16 +33,11 @@ width: 100%;
 {
 background-color:grey;	
 z-index:10;
-	position:absolute;
-	left:90%;
-	padding:2%;
-
-	
-	font-size:20px;
-
-	color:black;
-	
-	
+position:absolute;
+left:90%;
+padding:2%;
+font-size:20px;
+color:black;
 }
 
 .pic img {
@@ -120,3 +115,22 @@ z-index:10;
         width: 100%;
     }
 }
+
+
+.slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;     
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
