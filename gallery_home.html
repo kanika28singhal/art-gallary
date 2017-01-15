@@ -34,34 +34,49 @@
 		{
 			margin:auto;
 		}
-		.w3-sidenav
+		
+		.w3-sidenav a 
 		{
-			background-color:grey;!important
+		padding: 25px 3px 27px 25px;
 		}
 		
+		.w3-sidenav a:hover
+		{
+			font-size:18px;
+			box-shadow: 5px 5px 2px #888888;
+			color:black;
+			background-color:	#A0A0A0 ;
+		}
+		
+		.w3-sidenav a:focus
+		{	
+		color:black;
+		
+		}
 		</style>
 		<body>
-			<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="display:none" id="leftMenu">
-			  <a href="javascript:void(0)" onclick="closeLeftMenu()"
-			  class="w3-closenav w3-large">&times;</a>
-			  <a href="#">HOME</a>
-			  <a href="#gallery">GALLERY</a>
-			  <a href="#about">ABOUT</a>
-			  <a href="#contact">CONTACT</a>
-			
-			</nav>
+			<div class="navigation_bar">
+					<nav class="w3-sidenav w3-card-2 w3-animate-left " style="display:none;  width:350px; 	background-color:#C8C8C8  ; " id="leftMenu">
+					  <a href="javascript:void(0)" onclick="closeLeftMenu()"
+					  class="w3-closenav w3-large">&times;CLOSE</a>
+					  <a   class="fa fa-home" href="#"> HOME</a>
+					  <a class="fa fa-file-image-o" href="#gallery"> GALLERY</a>
+					  <a  class="fa fa-pencil"href="#about"> ABOUT</a>
+					  <a  class="glyphicon glyphicon-map-marker" href="#contact">CONTACT</a>
+					
+					</nav>
+			</div>
 			<div class="container-fluid">
 				<div class="display">
 					<div class="row">
 						<div class="col-sm-12">
 							<div class="main_img_first">
 								<header>
-									<span class="w3-opennav w3-xlarge" onclick="openLeftMenu()" style="color:white;">&#9776;</span>
- 
+									<span class="w3-opennav w3-xlarge " onclick="openLeftMenu()" style="color:white;">&#9776;</span>
 								</header>
 
 							
-									<a class="glyphicon glyphicon-chevron-down" href="#gallary"></a>
+									<a  class="glyphicon glyphicon-chevron-down down" href="#gallary"></a>
 							</div>
 						
 						</div>
@@ -78,113 +93,63 @@
 					<div class="row" >
 						<div class="col-sm-6" style="padding:0px">
 							<div class="pic">
-										<div class="pic_bottom">
-											<i class="fa fa-commenting-o"></i>
-											<i class="fa fa-thumbs-o-up"></i>
-										</div>
-									
-											<img id="myImg1" src="images/imgkiss.png" >
-									
-								</div>
-						
-									
-								<div class="pic">
-									<div class="pic_bottom">
-										<i class="fa fa-commenting-o"></i>
-										<i class="fa fa-thumbs-o-up"></i>
-									</div>
-									
+										<span class="glyphicon glyphicon-thumbs-up"></span>
+										<img id="myImg1" src="images/imgkiss.png" >
+							</div>
+							<div class="pic">
+										<span class="glyphicon glyphicon-thumbs-up"></span>
 										<img id="myImg2" src="images/imgheartbreak.png"  >
+							</div>
+							<div class="pic">
+										<span class="glyphicon glyphicon-thumbs-up"></span>
+										<img id="myImg3" src="images/imgneverlosehope.png" >
+							</div>
+							<div class="pic">
+										<span class="glyphicon glyphicon-thumbs-up"></span>
+										<img id="myImg4" src="images/imghug.png" >
+							</div>
+							<div class="pic">
+										<span class="glyphicon glyphicon-thumbs-up"></span>
+										<img id="myImg5" src="images/imgeye.png" >
+							</div>
+							<div class="pic">
+										<span class="glyphicon glyphicon-thumbs-up"></span>
+										<img  id="myImg6" src="images/imgnight.png" >
+							</div>
 									
-								</div>
-								
-								<div class="pic">
-									<div class="pic_bottom">
-										<i class="fa fa-commenting-o"></i>
-										<i class="fa fa-thumbs-o-up"></i>
-									</div>
-							
-									<img id="myImg3" src="images/imgneverlosehope.png" >
-								
-								</div>
-								
-								<div class="pic">
-									<div class="pic_bottom">
-										<i class="fa fa-commenting-o"></i>
-										<i class="fa fa-thumbs-o-up"></i>
-									</div>
-									<img id="myImg4" src="images/imghug.png" >
-								</div>
-								<div class="pic">
-									<div class="pic_bottom">
-										<i class="fa fa-commenting-o"></i>
-										<i class="fa fa-thumbs-o-up"></i>
-									</div>			
-									<img id="myImg5" src="images/imgeye.png" >
-								</div>
-								<div class="pic">
-									<div class="pic_bottom">
-										<i class="fa fa-commenting-o"></i>
-										<i class="fa fa-thumbs-o-up"></i>
-									</div>			
-								<img  id="myImg6" src="images/imgnight.png" >
-								</div>
-								
-							</div>	 
+						</div>	 
 							
 						
 						<div class="col-sm-6" style="padding:0px">
-								<div class="pic">
-										<div class="pic_bottom">
-											<i class="fa fa-commenting-o"></i>
-											<i class="fa fa-thumbs-o-up"></i>
-										</div>	
-									
+							<div class="pic">
+										<span class="glyphicon glyphicon-thumbs-up"></span>
 										<img id="myImg7"src="images/imgcar.png" >
-								
-								</div>	
-								<div class="pic">
-									<div class="pic_bottom">
-											<i class="fa fa-commenting-o"></i>
-											<i class="fa fa-thumbs-o-up"></i>
-										</div>	
-									
+							</div>
+							<div class="pic">
+										<span class="glyphicon glyphicon-thumbs-up"></span>
 										<img id="myImg8"src="images/imgwine.png" >
-								
-								</div>
-								<div class="pic">
-										<div class="pic_bottom">
-											<i class="fa fa-commenting-o"></i>
-											<i class="fa fa-thumbs-o-up"></i>
-										</div>
-								
+							</div>
+							<div class="pic">
+										<span class="glyphicon glyphicon-thumbs-up"></span>
 										<img id="myImg9"src="images/imglips.png" >
+							</div>
+							<div class="pic">
+										<span class="glyphicon glyphicon-thumbs-up"></span>
+										<img id="myImg10" src="images/imgbird.png" >
+							</div>
+							<div class="pic">
+										<span class="glyphicon glyphicon-thumbs-up"></span>
+										<img id="myImg11" src="images/imgfrnds.png" >
+							</div>
+							<div class="pic">
+										<span class="glyphicon glyphicon-thumbs-up"></span>
+										
+										<img id="myImg12" src="images/imgdepression.png" >
 							
-								</div>
-								<div class="pic">
-									<div class="pic_bottom">
-											<i class="fa fa-commenting-o"></i>
-											<i class="fa fa-thumbs-o-up"></i>
-									</div>
-												
-									<img id="myImg10" src="images/imgbird.png" >
+							</div>
+								
 							
-								</div>
-								<div class="pic">
-										<div class="pic_bottom">
-											<i class="fa fa-commenting-o"></i>
-											<i class="fa fa-thumbs-o-up"></i>
-										</div>
-							
-									<img id="myImg11" src="images/imgfrnds.png" >
-							
-								</div>
-								<div class="pic">
-										<div class="pic_bottom">
-											<i class="fa fa-commenting-o"></i>
-											<i class="fa fa-thumbs-o-up"></i>
-										</div>	
-									<img id="myImg12" src="images/imgdepression.png" >
+									
 								</div>
 							</div>
 					</div>
@@ -228,13 +193,13 @@
 												</div>
 												<p>Photoshop</p>
 												<div class="progress">
-													<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+													<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
 													<span class="sr-only">70% Complete</span>
 													</div>
 												</div>
 												<p>Illustrator</p>
 												<div class="progress">
-													<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+													<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%">
 													<span class="sr-only">70% Complete</span>
 													</div>
 												</div>
@@ -253,7 +218,7 @@
 						<div class="contact" id="contact">
 							<div class="row">
 										<div class="col-sm-5">
-											map
+											<img id=" map"src="images/map.png" >
 										</div>	
 										<div class="col-sm-7">
 										<div class="text">
@@ -276,6 +241,14 @@
 										</div>	
 										</div>
 								</div>
+						</div>
+						<div class="footer">
+							<div class="footertext">
+							
+							<i class="fa fa-facebook"></i>
+							<i class="fa fa-instagram"></i>
+							<i class="glyphicon glyphicon-envelope"></i>
+							</div>
 						</div>
 				
 				</div>
